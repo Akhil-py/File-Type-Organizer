@@ -2,10 +2,8 @@ directory = 'path/to/download/folder'
 
 import os
 
-def getExtension(file):
-    pass
-
-def sort(file, directory):
+# Method to sort an individual file into its respective folder
+def sort(file):
     if '.' in file:
         pass
     else:
@@ -21,9 +19,9 @@ def sort(file, directory):
         
     os.rename(directory + '/' + file, directory + '/' + extension + '/' + file)
     
-# access download folder
+# Put files in download folder into an array
 files = os.listdir(directory)
 
-# iterate through each file in folder
+# Iterate through each file and sort it
 for i in files:
-    sort(i, directory)
+    sort(i)
