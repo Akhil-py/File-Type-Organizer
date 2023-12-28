@@ -17,9 +17,7 @@ def sort(file, directory):
     if extension in listOfFiles:
         pass
     else:
-        print(listOfFiles)
         os.mkdir(directory + '/' + extension)
-        print("\nhehe\n")
         
     os.rename(directory + '/' + file, directory + '/' + extension + '/' + file)
     
