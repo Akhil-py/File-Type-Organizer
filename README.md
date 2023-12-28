@@ -3,3 +3,4 @@
 
 # How to run
 Replace the path to the directory on line 1 of the script with the directory of choice.
+eg: `directory = 'C:/Users/user/Downloads'`
