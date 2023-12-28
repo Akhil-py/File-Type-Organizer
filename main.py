@@ -1,3 +1,5 @@
+directory = 'path/to/download/folder'
+
 import os
 
 def getExtension(file):
@@ -22,7 +24,6 @@ def sort(file, directory):
     os.rename(directory + '/' + file, directory + '/' + extension + '/' + file)
     
 # access download folder
-directory = 'C:/Users/ramsh/Downloads'
 files = os.listdir(directory)
 
 # iterate through each file in folder
